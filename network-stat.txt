@@ -1,0 +1,42 @@
+root@charlie-ubuntu:~# netstat -atunp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:9411            0.0.0.0:*               LISTEN      185402/docker-proxy
+tcp        0      0 0.0.0.0:9999            0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 0.0.0.0:9091            0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 0.0.0.0:9090            0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 10.247.101.103:8080     0.0.0.0:*               LISTEN      2188724/node
+tcp        0      0 127.0.0.1:38257         0.0.0.0:*               LISTEN      3487189/ir_agent
+tcp        0      0 127.0.0.1:6061          0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      927/sshd: /usr/sbin
+tcp        0      0 0.0.0.0:50005           0.0.0.0:*               LISTEN      185576/docker-proxy
+tcp        0      0 127.0.0.1:8050          0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      3868868/cupsd
+tcp        0      0 0.0.0.0:6379            0.0.0.0:*               LISTEN      185388/docker-proxy
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      735/systemd-resolve
+tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      3960977/java
+tcp        0      0 127.0.0.1:48466         127.0.1.1:6000          ESTABLISHED 3960977/java
+tcp        0      0 10.247.101.103:8080     10.84.120.151:57289     CLOSE_WAIT  2188724/node
+tcp        0      0 127.0.0.1:45586         127.0.0.1:38257         ESTABLISHED 3487552/ir_agent
+tcp        0    272 10.247.101.103:22       10.84.120.151:65179     ESTABLISHED 3960388/sshd: root@
+tcp        0      0 127.0.0.1:4000          127.0.0.1:52276         TIME_WAIT   -
+tcp        0      0 10.247.101.103:22       10.84.120.151:65184     ESTABLISHED 3960628/sshd: root@
+tcp        0      0 10.247.101.103:43278    193.149.136.107:443     ESTABLISHED 3487189/ir_agent
+tcp        0      0 127.0.1.1:6000          127.0.0.1:48466         ESTABLISHED 3960977/java
+tcp        0      0 10.247.101.103:8080     10.84.120.151:57222     CLOSE_WAIT  2188724/node
+tcp        0      0 127.0.0.1:52278         127.0.0.1:4000          TIME_WAIT   -
+tcp        0      0 127.0.0.1:38257         127.0.0.1:45586         ESTABLISHED 3487189/ir_agent
+tcp        0      0 127.0.0.1:52282         127.0.0.1:4000          ESTABLISHED 3960977/java
+tcp        0      0 127.0.0.1:52280         127.0.0.1:4000          ESTABLISHED 3960977/java
+tcp        0      0 10.247.101.103:8080     10.84.120.151:65296     CLOSE_WAIT  2188724/node
+tcp        0      0 127.0.0.1:4000          127.0.0.1:52280         ESTABLISHED 3960977/java
+tcp        0      0 127.0.0.1:4000          127.0.0.1:52282         ESTABLISHED 3960977/java
+tcp6       0      0 :::22                   :::*                    LISTEN      927/sshd: /usr/sbin
+udp        0      0 0.0.0.0:31400           0.0.0.0:*                           3487189/ir_agent
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           735/systemd-resolve
+udp        0      0 0.0.0.0:49715           0.0.0.0:*                           764/avahi-daemon: r
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           3868869/cups-browse
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           764/avahi-daemon: r
+udp6       0      0 :::50200                :::*                                764/avahi-daemon: r
+udp6       0      0 :::5353                 :::*                                764/avahi-daemon: r
