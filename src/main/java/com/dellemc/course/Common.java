@@ -6,7 +6,7 @@ import io.pravega.client.EventStreamClientFactory;
 import java.net.URI;
 
 public class Common {
-    public static String Url = "tcp://10.247.101.103:9090";
+    public static String Url = "tcp://127.0.0.1:9090";
     public static String Scope = "dell";
     public static String Stream = "demo";
 
